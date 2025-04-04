@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+
+    <div class="container  mx-auto ">
+        <div class="row mt-5">
+            <div class="col-lg-5 bg-white m-auto rounded-top rounded-bottom wrapper shadow-lg">
+                <h2 class="text-center text-title pt-4 mb-5">Signup Now</h2>
+
+                <form id="signupForm" onsubmit="return validateForm()">
+                <!-- First Name -->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <small id="firstNameError" class="text-danger d-none">Please enter a valid first name (only letters).</small>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    <small id="lastNameError" class="text-danger d-none">Please enter a valid last name (only letters).</small>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <small id="emailError" class="text-danger d-none">Please enter a valid email address.</small>
+                </div>
+
+                <!-- Mobile Number -->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                        <input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile Number" required>
+                    </div>
+                    <small id="mobileError" class="text-danger d-none">Please enter a valid mobile number.</small>
+                </div>
+
+                <!-- Gender Dropdown -->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa fa-venus-mars"></i></span>
+                        <select class="form-control" id="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <small id="genderError" class="text-danger d-none">Please select your gender.</small>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <small id="passwordError" class="text-danger d-none">Password must be at least 6 characters long.</small>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    <small id="confirmPasswordError" class="text-danger d-none">Passwords do not match.</small>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success mt-4">Signup Now</button>
+
+                    <p class="text-center mt-4 mb-3">
+                        Already Have an Account? <a href="login.html">Login Here</a>
+                    </p>
+                </div>
+            </form>
+            <!-- Form Ends -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript Validation
+    function validateForm() {
+        
+    // Get form values
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const email = document.getElementById("email").value;
+    const mobileNumber = document.getElementById("mobileNumber").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    const gender = document.getElementById("gender").value;
+
+    // Validation Flags
+    let isValid = true;
+
+    // Regular Expressions
+    const nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    const mobileRegex = /^[7-9][0-9]{9}$/; // Indian mobile number regex
+    const passwordRegex = /^.{6,}$/; // Password should be at least 6 characters
+
+    // Clear previous error messages
+    document.getElementById("firstNameError").classList.add("d-none");
+    document.getElementById("lastNameError").classList.add("d-none");
+    document.getElementById("emailError").classList.add("d-none");
+    document.getElementById("mobileError").classList.add("d-none");
+    document.getElementById("passwordError").classList.add("d-none");
+    document.getElementById("confirmPasswordError").classList.add("d-none");
+    document.getElementById("genderError").classList.add("d-none");
+
+    // First Name validation
+    if (!nameRegex.test(firstName)) {
+        document.getElementById("firstNameError").classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Last Name validation
+    if (!nameRegex.test(lastName)) {
+        document.getElementById("lastNameError").classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Email validation
+    if (!emailRegex.test(email)) {
+        document.getElementById("emailError").classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Mobile Number validation
+    if (!mobileRegex.test(mobileNumber)) {
+        document.getElementById("mobileError").classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Gender validation
+    if (!gender) {
+        document.getElementById("genderError").classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Password validation
+    if (!passwordRegex.test(password)) {
+        document.getElementById("passwordError").classList.remove("d-none");
+        isValid = false;
+    }
+
+    // Confirm Password validation
+    if (password !== confirmPassword) {
+        document.getElementById("confirmPasswordError").classList.remove("d-none");
+        isValid = false;
+    }
+
+    // If the form is valid, show success alert and redirect to the login page
+    if (isValid) {
+        alert("Registration Successful!");
+        window.location.href = "login.html";  // Redirect to login page
+    }
+
+    // Return the result of validation
+    return isValid;
+}
+
+    </script>
+
+</body>
+</html>

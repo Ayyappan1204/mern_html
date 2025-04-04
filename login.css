@@ -1,0 +1,31 @@
+.wrapper{
+    border-top: 4px solid green;
+}
+
+.wrapper a{
+    text-decoration: none;
+    color: green;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+
+body{
+    background-image: url(img/aboimg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.text-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: green;
+    font-size: 35px;
+}
+
+

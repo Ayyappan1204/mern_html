@@ -1,0 +1,243 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive Styles */
+@media(max-width: 1500px) {
+    .heading-contact {
+        margin-bottom: 60px !important;
+        margin-top: 90px;
+    }
+}
+
+@media(max-width:1200px) {
+    .form-origin {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        width: auto;
+    }
+
+    .navbar-toggler-icon {
+        background-color: white;
+        color: aliceblue;
+        margin: 10px 0px;
+    }
+
+    .nav-item .nav-link {
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .logo {
+        color: rgb(255,129,57) !important;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 8px 0px;
+    }
+
+    .img-home {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .home-heading {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 74px;
+        text-align: center;
+    }
+
+    .box-container2 {
+        padding-left: 0;
+    }
+
+    .img-about, .img-founder {
+        height: auto;
+        width: 100%;
+        position: static;
+        top: 0;
+        right: 0;
+    }
+
+    .about-us-container, .founder-container {
+        height: auto !important;
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    .about-us, .founder {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .dance-category {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .container-content {
+        width: 90%;
+        height: auto;
+    }
+
+    .testimonial {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .container-clients, .container-content {
+        height: auto;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: -38px !important;
+    }
+}
+
+@media (max-width: 834px) {
+    .home-heading {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .about-us, .founder {
+        margin-top: 80px;
+        padding: 15px;
+    }
+
+    .img-home {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .testimonial {
+        margin-bottom: 3rem;
+    }
+
+    .container-content {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 6px 0;
+    }
+
+    .content-about {
+        padding: 10px 20px;
+    }
+
+    .img-about, .img-founder {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .para-home {
+        text-align: center;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-home {
+        height: auto;
+    }
+
+    .box-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img-home {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .about-us, .founder {
+        margin-top: 140px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .para-home {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .btn-home {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-heading {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .nav-item .nav-link {
+        font-size: 14px;
+    }
+
+    .img-home {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .box-container, .box-container2 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .testimonial {
+        margin-bottom: 2rem;
+    }
+
+    .about-us, .founder {
+        margin-top: 100px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .dance-category {
+        width: 100%;
+        height: auto;
+        margin-top: 90px;
+    }
+
+    .para-home {
+        padding: 0 10px;
+    }
+}

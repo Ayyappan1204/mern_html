@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #232323;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    padding: 15px 18px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    font-weight: 700;
+    color: rgb(255, 129, 57) !important;
+    font-size: 40px;
+    font-family: "Rubik 80s Fade", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+    margin-right: 10px; /* Adds space between logo and text */
+}
+
+
+   
+.nav-item{
+    margin: 0px 8px;
+}
+
+.nav-item .nav-link{
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    background-color: rgb(255, 129, 57);
+    width: 0%;
+    height: 3px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after{
+    width: 100%;
+}
+
+.nav-link:hover{
+    color: rgb(255, 129, 57);
+}
+
+.btn-navbar{
+    display: inline-block;
+    padding: 10px 43px;
+    border: 1px solid rgb(36, 193, 255);
+    color: rgb(36, 193,255);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: 0.2s ease;
+}
+
+.btn-navbar:hover{
+    background-color: transparent;
+    color: rgb(255, 129, 57);
+    border: 1px solid rgb(255, 129, 57);
+}
+
+/* home section start*/
+
+.content-home2{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-heading{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 74px;
+}
+
+.home-span{
+    color: rgb(255, 129, 57);
+    font-size: 80px;
+    font-family: "Londrina Shadow", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+  
+}
+
+.para-home{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255);
+    max-width: 400px;
+    line-height: 24px;
+    margin: 14px 0px;
+}
+
+.home-links{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(36, 193, 255);
+    border: 1px solid rgb(36, 193,255);
+    background-color: transparent;
+    margin: 20px 0px;
+    margin-right: 7px;
+    border-radius: 50px;
+    padding: 10px 37px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn-2{
+    border: 1px solid rgb(36, 193, 255);
+    color: rgb(36, 193,255);
+    background-color: transparent;
+}
+
+.home-links:hover{
+    background-color: transparent;
+    color: rgb(255, 129, 57);
+    border: 1px solid rgb(255, 129, 57) !important;
+}
+
+.img-home{
+    margin-right: 30px;
+    width: 420px;
+}
+
+/* about section css*/
+
+.about-us-conatiner{
+    width: 100%;
+    height: 80vh;
+}
+
+.about-us{
+    width: 100%;
+    height: 380px;
+    background-color: rgb(54,54,54);
+    margin-top: 140px;
+    position: relative;
+
+}
+
+.content-about{
+    padding: 10px 38px;
+
+}
+
+.heading-about{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 129, 57);
+    margin: 10px 0px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-about::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(255, 129, 57);
+    width: 46px;
+    height: 2px;
+
+}
+
+.para-about{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.695);
+    line-height: 21px;
+    margin: 25px 0px;   
+
+}
+
+.link-about{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 129, 57, 0.5);
+    color: rgb(255, 129, 57);
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 22px;
+    position: relative;
+    z-index: 22;
+}
+
+
+.link-about:hover{
+    color: white;
+}
+
+.span-about{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 129, 57);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.4s ease-in;
+}
+
+.link-about:hover .span-about{
+    width: 100%;
+
+}
+
+.fa-arrow-right{
+    color: rgb(255, 129, 57);
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.fa-arrow-right:hover{
+    color: white;
+}
+
+.img-about{
+    height: 450px;
+    width: 50%;
+    position: absolute;
+    top: -36px;
+    right: 25px;
+}
+
+/*founder's message section starts*/
+.founder-container{
+    width: 100%;
+    height: 80vh;
+}
+
+.founder{
+    width: 100%;
+    height: 540px;
+    background-color: rgb(54,54,54);
+    margin-top: 290px;
+    position: relative;
+}
+
+.content-founder{
+    padding: 10px 38px;
+}
+
+.heading-founder{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 129, 57);
+    margin: 10px 0px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-founder::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(255, 129, 57);
+    width: 46px;
+    height: 2px;
+}
+
+.img-founder{
+    height: 610px;
+    width: 40%;
+    position: absolute;
+    top: -36px;
+    left: 25px;
+}
+
+/*founder's section completed*/
+
+/*Dance section css*/
+
+.dance-category{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    margin-top: 50px;
+
+}
+
+.heading-dance{
+    font-size: 70px;
+    color: rgb(255, 129, 57);
+    margin-bottom: 100px;
+    position: relative;
+    font-family: "Grechen Fuemen", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.heading-dance::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(255, 129, 57);
+    width: 56px;
+    height: 2px;
+}
+
+.card-product{
+    padding: 14px 10px;
+    background-color: #242424 !important;
+
+}
+
+.img-card{
+    height: 350px !important;
+
+}
+
+.card-title{
+    font-size: 14px;
+    color: rgb(255, 129, 57);
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 129, 57);
+    padding: 5px 0px;
+    margin: 10px 0px;
+    margin-bottom: 20px !important;
+}
+
+.card-text{
+    color: rgba(255, 255, 255, 0.873);
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.btn-product-ctg{
+    color: rgb(255, 129, 57);
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-product-ctg:hover{
+    color: rgb(250, 183, 144);
+}
+
+.button-left{
+    position: absolute;
+    left: 20px;
+    padding: 10px 12px;
+    color: #100f10;
+    border-radius: 30px;
+    background-color: #2c2c2c;
+    font-size: 18px;
+}
+
+.button-right{
+    position: absolute;
+    right: 20px;
+    padding: 10px 12px;
+    color: #100f10;
+    border-radius: 30px;
+    background-color: #2c2c2c;
+    font-size: 18px;
+}
+
+.button-right:hover, .button-left:hover{
+    color: rgb(255, 129, 57);
+}
+
+/* Dance category css ends*/
+
+.testimonial{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.heading-testimonial{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.884);
+    margin-bottom: 35px;
+
+}
+
+.heading-testimonial .styling{
+    color: rgb(255, 129, 57);
+}
+
+.para-testimonials{
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center !important;
+    max-width: 760px;
+    margin: 12px auto;
+    line-height: 25px;
+}
+
+.container-clients{
+    margin: 100px auto;
+
+}
+
+.container-content{
+    width: 90%;
+    height: 400px;
+    background-image: linear-gradient(145deg, rgba(244, 129, 63,1) 0%,rgba(241, 85, 106, 1)100%);
+    margin: auto;
+    padding: 30px;
+    text-align: end;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.2s ease-in;
+
+}
+
+.container-content:hover{
+    transform: translateY(-14px);
+}
+
+.img-client{
+    position: absolute;
+    top: -62px;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% !important;
+    
+}
+
+.image-clients{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 12px 0px;
+}
+
+.rating .stars{
+    font-size: 14px;
+    margin: 0px 2px;
+
+}
+
+.client-name{
+    font-size: 22px;
+    margin-top:20px ;
+    color: white;
+    text-align: center;
+
+}
+
+.para-client{
+    color: rgba(255, 255, 255, 0.877);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 26px 0px 15px 0px;
+    text-align: center;
+
+}
+
+.profession{
+    color: #fff;
+    font-weight: 60;
+    font-size: 18px;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.carousel-indicators button{
+    background-color: rgb(255, 129, 57);
+}
+
+.carousel-indicators{
+    position: absolute;
+    bottom: -68px !important;
+   
+}
+
+
+
+/* Testimonial Completed */
+
+
+
+footer{
+    background-color: rgb(4, 4, 4);
+    margin: 0px 0px !important;
+    height: auto;
+    margin-top: 40px  !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.para-footer{
+    padding: 20px;
+
+}
+ 
+footer a{
+    text-decoration: none;
+    color: rgb(255, 129, 57);
+}
+footer ul li .title {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+ body {
+    transform: translateX(-100%); /* Initially out of view */
+    opacity: 0; /* Initially hidden */
+    animation: slideInFromLeft 1s ease-out forwards; /* Slide-in from left */
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+.img-home, .img-about, .img-founder, .img-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.img-home:hover, .img-about:hover, .img-founder:hover, .img-card:hover {
+    transform: rotate(8deg); /* Rotate effect */
+    opacity: 0.9; /* Optional fade effect */
+}
+
+
+

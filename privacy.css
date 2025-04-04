@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+
+body{
+    background-color:#232323;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    padding: 15px 18px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    font-weight: 700;
+    color: rgb(255, 129, 57) !important;
+    font-size: 40px;
+    font-family: "Rubik 80s Fade", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    height: 60px; /* Adjust size as needed */
+    width: auto;
+    margin-right: 10px; /* Adds space between logo and text */
+}
+
+
+   
+.nav-item{
+    margin: 0px 8px;
+}
+
+.nav-item .nav-link{
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    background-color: rgb(255, 129, 57);
+    width: 0%;
+    height: 3px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after{
+    width: 100%;
+}
+
+.nav-link:hover{
+    color: rgb(255, 129, 57);
+}
+
+.btn-navbar{
+    display: inline-block;
+    padding: 10px 43px;
+    border: 1px solid rgb(36, 193, 255);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(36, 193, 255);
+    transition: 0.2s ease;
+}
+
+.btn-navbar:hover{
+    background-color: transparent;
+    color: rgb(255, 129, 57);
+    border: 1px solid rgb(255, 129, 57);
+}
+
+/* Privacy */
+
+.privacy-conatiner{
+    width: 100%;
+    height:80vh;
+}
+
+.privacy{
+    width: auto;
+    height:auto;
+    background-color: rgb(54,54,54);
+    margin-top: 100px;
+    position: relative;
+
+}
+
+.content-privacy{
+    padding: 10px 38px;
+
+}
+
+.heading-privacy{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 129, 57);
+    margin: 10px 0px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.heading-privacy::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    background-color: rgb(255, 129, 57);
+    width: 46px;
+    height: 2px;
+
+}
+
+.para-privacy{
+    font-size: 14px;
+    font-weight: 500;
+    color: whitesmoke;
+    line-height: 21px;
+    margin: 25px 0px;   
+
+}
+
+.span-privacy{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 129, 57);
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.4s ease-in;
+}
+
+.span-privacy{
+    width: 100%;
+
+}
+
+.img-privacy{
+    height: auto;
+    width: 40%;
+    position: absolute;
+    top: 200px;
+    right: 25px;
+}
+
+ol.custom-bullets { 
+    list-style: none; /* Remove default bullets */
+    padding-left: 20px;
+}
+
+ol.custom-bullets li::before {
+    content: "⭐";  /* Custom bullet emoji */
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+li{
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+strong{
+    padding-block: auto;
+    font-size: 20px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 129, 57);
+    margin: 10px 0px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.lower{
+    padding-left: 50px;
+}
+
+footer{
+    background-color: rgb(4, 4, 4);
+    margin: 0px 0px !important;
+    height: auto;
+    margin-top: 40px  !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.para-footer{
+    padding: 20px;
+
+}
+ 
+footer a{
+    text-decoration: none;
+    color: rgb(255, 129, 57);
+}
+footer ul li .title {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
